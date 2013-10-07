@@ -1,7 +1,12 @@
 # Be sure to restart your server when you modify this file.
 
-# Your secret key for verifying the integrity of signed cookies.
+# Your secret key is used for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
+
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-RailsTest::Application.config.secret_token = '8e9f076f59b4c1f76aca323aadfaf6e189efa86785445a420d22ce664e227c2309ac27a5f802ca575cbc1f87b016de10a6e377e5c44331306dd3e3f5805d12d8'
+# You can use `rake secret` to generate a secure secret key.
+
+# Make sure your secret_key_base is kept private
+# if you're sharing your code publicly.
+SampleNewApp::Application.config.secret_key_base = 'b4ffe1f6a4de8d87336d5f906aa87be2f9c31bfcd7ffbf3fd0436d3396826a0d7420695afd11704999fcfd8c123e5675ec090a78011697fbffec2a4cf035f517'
